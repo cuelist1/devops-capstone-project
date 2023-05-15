@@ -1,4 +1,4 @@
-# This is a basic workflow that is Auto triggered
+# This is a basic workflow that is Auto triggered by Sal
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 name: CI Build
