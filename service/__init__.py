@@ -39,5 +39,5 @@ app.logger.info("Service initialized!")
 # add flask security
 from flask_talisman import Talisman
 talisman = Talisman(app)
-CORS(app)
 from flask_cors import CORS
+CORS(app)
