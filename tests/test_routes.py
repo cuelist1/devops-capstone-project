@@ -44,6 +44,7 @@ class TestAccountService(TestCase):
         db.session.query(Account).delete()  # clean up the last tests
         db.session.commit()
         self.client = app.test_client()
+        
     def tearDown(self):
         """Runs once after each test case"""
         db.session.remove()
