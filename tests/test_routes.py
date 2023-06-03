@@ -44,7 +44,7 @@ class TestAccountService(TestCase):
         db.session.query(Account).delete()  # clean up the last tests
         db.session.commit()
         self.client = app.test_client()
-        
+
     def tearDown(self):
         """Runs once after each test case"""
         db.session.remove()
@@ -53,7 +53,7 @@ class TestAccountService(TestCase):
 #  H E L P E R   M E T H O D S
 ######################################################################
 
-    def create_accounts(self, count):
+    def _create_accounts(self, count):
         """Factory method to create accounts in bulk"""
         accounts = []
         for _ in range(count):
